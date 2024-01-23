@@ -8,3 +8,4 @@
 
 *.sln
 *.ninja
+.vs/

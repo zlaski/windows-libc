@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{929b29f1-ebc8-4d4a-8cbc-1ee67b6b1006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\sys">
+      <UniqueIdentifier>{818dae72-13c3-4165-afb0-a9254ed05c97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\alloca.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\byteswap.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dirent.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dlfcn.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\err.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\errno.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\error.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fcntl.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\getopt.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\grp.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\io.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\langinfo.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\limits.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\poll.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\process.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pthread.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pwd.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sched.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\signal.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\spawn.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdint.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdio.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdio_ext.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdio-ext.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdio-hooks.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdlib.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\string.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\strings.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sysexits.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\termios.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\unistd.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wchar.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wlibc.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\acl.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\file.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\fstypes.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\ioctl.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\mman.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\mount.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\param.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\random.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\resource.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\select.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\stat.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\statfs.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\statvfs.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\time.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\times.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\types.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\utsname.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\wait.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys\xattr.h">
+      <Filter>Header Files\include\sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
