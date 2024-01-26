@@ -19,6 +19,12 @@
     <Filter Include="Header Files\include\sys">
       <UniqueIdentifier>{818dae72-13c3-4165-afb0-a9254ed05c97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{7a108ed0-6616-4e87-9c81-32fd9109c694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\thread">
+      <UniqueIdentifier>{e6696430-3dee-43d0-ba59-82fb6b3c6751}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\alloca.h">
@@ -183,5 +189,31 @@
     <ClInclude Include="include\sys\xattr.h">
       <Filter>Header Files\include\sys</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\thread\barrier.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\cond.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\internal.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\key.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\mutex.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\once.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\rwlock.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\thread.c">
+      <Filter>Source Files\src\thread</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
