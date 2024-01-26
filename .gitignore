@@ -9,3 +9,5 @@
 *.sln
 *.ninja
 .vs/
+/Debug
+/Release
