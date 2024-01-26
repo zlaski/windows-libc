@@ -10,7 +10,15 @@
 #include <thread.h>
 #include <intrin.h>
 
-#pragma intrinsic(_BitScanForward64)
+#ifdef _WIN64
+#	pragma intrinsic(_BitScanForward64)
+#	define _BitScanFwd(idx, mask) _BitScanForward64(idx, mask)
+#else
+#	pragma intrinsic(_BitScanForward)
+#	define _BitScanFwd(idx, mask) (_BitScanForward(idx, (DWORD)(mask)) \
+	|| (_BitScanForward(idx, (DWORD)((mask) >> 32)) && (*idx += 32)))
+#endif
+
 
 #define VALIDATE_TLS_ENTRY(index, result)           \
 	if ((_wlibc_tls_bitmap & (1ull << index)) == 0) \
@@ -21,7 +29,7 @@
 int wlibc_tss_create(key_t *index, dtor_t destructor)
 {
 	// Find a free slot.
-	if (_BitScanForward64(index, ~_wlibc_tls_bitmap) == 1)
+	if (_BitScanFwd(index, ~_wlibc_tls_bitmap) == 1)
 	{
 		_wlibc_tls_bitmap |= (1ull << *index);
 		_wlibc_tls_destructors[*index] = destructor;

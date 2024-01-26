@@ -22,24 +22,24 @@
 
 /* For C++ compilers compiling C code */
 #ifdef __cplusplus
-#	define _WLIBC_BEGIN_DECLS \
-		extern "C"             \
-		{
+#	define _WLIBC_BEGIN_DECLS extern "C" {
 #	define _WLIBC_END_DECLS }
 #else
 #	define _WLIBC_BEGIN_DECLS
 #	define _WLIBC_END_DECLS
 #endif
 
-#define WLIBC_INLINE   __forceinline
-#define WLIBC_NORETURN __declspec(noreturn)
 
-#if defined __clang__
-#	define WLIBC_UNUSED  __attribute__((unused))
-#	define WLIBC_NONNULL __attribute__((nonnull))
+#if defined __GNUC__
+#	define WLIBC_INLINE   __attribute__((always_inline))
+#	define WLIBC_NORETURN __attribute__((noreturn))
+#	define WLIBC_UNUSED   __attribute__((unused))
+#	define WLIBC_NONNULL  __attribute__((nonnull))
 #elif defined _MSC_VER
-#	define WLIBC_UNUSED
-#	define WLIBC_NONNULL
+#	define WLIBC_INLINE   __forceinline
+#	define WLIBC_NORETURN __declspec(noreturn)
+#	define WLIBC_UNUSED   __pragma(warning(suppress: 4100, 4505))
+#	define WLIBC_NONNULL  _Notnull_
 #endif
 
 #endif

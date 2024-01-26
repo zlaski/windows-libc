@@ -52,7 +52,7 @@ extern FILE *_wlibc_stderr;
 #define TMP_MAX      _CRT_INT_MAX
 #define _SYS_OPEN    20
 
-typedef long long fpos_t;
+typedef __int64 fpos_t;
 
 // file access
 WLIBC_API FILE *wlibc_fopen(const char *restrict name, const char *restrict mode);
@@ -179,7 +179,7 @@ WLIBC_INLINE off_t ftello(FILE *stream)
 
 WLIBC_INLINE int fsetpos(FILE *restrict stream, fpos_t *restrict pos)
 {
-	return wlibc_fseek(stream, *pos, SEEK_SET);
+	return wlibc_fseek(stream, (ssize_t)*pos, SEEK_SET);
 }
 
 WLIBC_INLINE int fgetpos(FILE *restrict stream, fpos_t *restrict pos)

@@ -17,7 +17,7 @@
 #define VALIDATE_THREAD(thread)           VALIDATE_PTR(thread, EINVAL, -1)
 #define VALIDATE_THREAD_ATTR(thread_attr) VALIDATE_PTR(thread_attr, EINVAL, -1)
 
-DWORD wlibc_thread_entry(void *arg)
+static DWORD WINAPI wlibc_thread_entry(LPVOID arg)
 {
 	threadinfo *tinfo = (threadinfo *)arg;
 	void *result;

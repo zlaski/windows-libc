@@ -177,7 +177,7 @@ WLIBC_INLINE void *mempcpy(void *destination, const void *source, size_t size)
 
 WLIBC_INLINE void *rawmemchr(const void *str, int character)
 {
-	return memchr(str, character, -1ull);
+	return memchr(str, character, (size_t)-1);
 }
 
 /* API implementations */
